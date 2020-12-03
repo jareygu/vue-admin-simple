@@ -1,0 +1,27 @@
+{
+    "root": true,
+    "parserOptions": {
+        "parser": "babel-eslint",
+        "sourceType": "module"
+    },
+    "plugins": ["vue"],
+    "extends": ["elemefe", "plugin:vue/recommended"],
+    "env": {
+        "es6": true
+    },
+    "rules": {
+        "indent": [2, 4, { "SwitchCase": 1 }],
+        "radix": ["error", "as-needed"],
+        "vue/html-indent": ["error", 4, {
+            "attribute": 1,
+            "closeBracket": 0,
+            "alignAttributesVertically": true,
+            "ignores": []
+        }],
+        "vue/require-default-prop": "off",
+        "vue/require-v-for-key": "off",
+        "vue/no-confusing-v-for-v-if": "off",
+        "vue/require-prop-types": "off"
+
+    }
+}
